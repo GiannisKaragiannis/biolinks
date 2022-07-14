@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Giannis Karagiannis - Links</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./index.css" />
+        <link rel="preload" href="./images/bg2.jpg" as="image" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+        <script>
+         window.addEventListener('DOMContentLoaded', () => {
+          VANTA.BIRDS({
+            el: "#vanta",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundAlpha: 0.0,
+            color2: 0xff00f0,
+            wingSpan: 36.00,
+            separation: 100.00,
+            speedLimit: 2.00,
+            alignment: 77.00,
+            cohesion: 5.00,
+            quantity: 2.30,
+            birdSize: 1.20,
+          })
+
+          setTimeout(() => {
+            const main = document.querySelector('main')
+            main.style.opacity = 1
+            main.style.filter = 'blur(0px)'
+          }, 1000)
+         })
+
+         let menu = document.getElementById('menu');
+         console.log("Website not developed yet"); 
+       </script>    
+    </head>
+    <body>
+        <div id="vanta"></div>
+        <main class="animated">
+            <header>
+                <img src="./images/giannis.jpg"/>
+                <h1>@Giannis Karagiannis</h1>
+            </header>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./images//homepage.svg" alt="Homepage" width="20"/>
+                        Official Website
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCdx-S4zhnAqTdvzKJZ8LADA">
+                        <img src="./images//youtube.svg" alt="Youtube" width="20"/>
+                        YouTube
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Giannaroos">
+                        <img src="./images//twitter.svg" alt="Twitter" width="20"/>
+                        Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/johngettabag">
+                        <img src="./images//instagram.svg" alt="Instagram" width="20"/>
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Giannis07">
+                        <img src="./images//github.svg" alt="GitHub" width="20"/>
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </main> 
+    </body>
+</html>
